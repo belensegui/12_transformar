@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T R A S F O R M</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+           /* width: 659px;
+            height: 1191px;*/
+            width: 219.6px;
+            height: 595.5px;
+        }
+        .caixa{
+            display: grid;
+            grid-template: repeat(2,1fr)/repeat(3,1fr);   
+        }
+        .un, .dos, .tres, .quatre, .cinc, .sis{
+            overflow: hidden;
+        }
+        .un img{
+            opacity: 1;
+            transition: 1s, opacity;
+        }
+        .un:hover img{
+            opacity: 0.2;
+        }
+        .dos img{
+            transform: translate(-219.6px, 0) scale(1);
+            transition: 2s transform;
+        }
+        .dos:hover img{
+            transform: scale(5);
+        }
+        .tres img{
+            transform: translate(-439.2px, 0) rotate(0);
+            transition: 3s transform;
+        }
+        .tres:hover img{
+            transform: rotate(145deg);
+        }
+        .quatre img{
+            transform: translate(0, -595.5px) scale(1);
+            transition: 4s transform;
+        }
+        .quatre:hover img{
+            transform: scale(4);
+        }
+        .cinc img{
+            transform: translate(-219.6px, -595.5px) rotate(0);
+            transition: 5s transform;
+        }
+        .cinc:hover img{
+            transform: rotate(50deg);
+        }
+        .sis img{
+            transform: translate(-439.2px, -595.5px) skewY(0);
+            transition: 6s transform;
+        }
+        .sis:hover img{
+            transform: skewY(180deg);
+        }
+    </style>
+</head>
+<body>
+        <div class="caixa">
+            <div class="un">
+                <img src="img/rosa.jpeg">
+            </div>
+            <div class="dos">
+                <img src="img/rosa.jpeg">
+            </div>
+            <div class="tres">
+                <img src="img/rosa.jpeg">
+            </div>
+            <div class="quatre">
+                <img src="img/rosa.jpeg">
+            </div>
+            <div class="cinc">
+                <img src="img/rosa.jpeg">
+            </div>
+            <div class="sis">
+                <img src="img/rosa.jpeg">
+            </div>
+        </div>
+</body>
+</html>
